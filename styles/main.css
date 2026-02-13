@@ -1,0 +1,103 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ruda:wght@400..900&display=swap');
+
+:root {
+    --background-color: #151928;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+ 
+}
+
+
+header {
+    display: flex;
+    
+    justify-content: space-between;
+    padding: 40px 100px;
+
+}
+
+nav {
+    font-family: "Ruda", sans-serif;
+    
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 24px;
+    color: white;
+}
+
+#card-informartion {
+    display: inline-block;
+    position: relative;
+    bottom: 620px;
+    right: 170px;
+}
+
+#circle-level{
+    width: 80px;
+    height: 80px;
+    background-color: #381688;
+    position: absolute;
+    left: 150px;
+    bottom: 560px;
+    border-radius: 100px;
+    border: 1px solid white;
+
+}
+
+#circle-level p {
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    font-family: "Ruda", sans-serif;
+    margin: 10px auto;
+    font-size: 23px;
+    color: white;
+}
+
+#status-painel {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    width: 380px;
+    height: 600px;
+    background-color: #141414;
+    border: 3px solid #3A3A3A;
+    border-radius: 20px;
+    
+}
+#status-painel div {
+    margin-top: 50px;
+    padding: 10px;
+
+}
+#name-input-game {
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #242424;
+    border-radius: 10px;
+}
+
+#status-painel span  {
+    margin-bottom: 24px;
+    padding: 15px;
+    background-color: #242424;
+    border-radius: 10px;
+}
+
+#left-content-top {
+    position: relative;
+}
+
+th,td {
+    padding-left: 20px;
+
+    
+}
