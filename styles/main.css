@@ -31,6 +31,20 @@ nav a {
     margin-left: 24px;
     color: white;
 }
+#left-content-top {
+   
+   max-width: 800px;
+    width: 100%;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#card-absolute{
+    left: 500px;
+    bottom: 50px;
+    position: relative;
+}
 
 #card-informartion {
     display: inline-block;
@@ -92,10 +106,50 @@ nav a {
     border-radius: 10px;
 }
 
-#left-content-top {
+#content-top {
     position: relative;
+    display: flex;
+    
+    justify-content: space-between;
+    color: white;
+    height: 800px;
 }
 
+#right-content-top{
+    margin-right: 200px;
+    margin-top: 280px;
+    width: 600px;
+}
+
+#right-content-top p {
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+#right-content-top h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+#buttons-content-top {
+    align-self: center;
+    display: flex;
+    gap: 50px;
+    
+}
+
+.button {
+    text-decoration: none;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: red;
+}
+#right-content-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 th,td {
     padding-left: 20px;
 
