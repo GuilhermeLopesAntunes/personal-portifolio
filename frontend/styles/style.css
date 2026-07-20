@@ -1,0 +1,80 @@
+@import url("./global.css");
+@import url("./orbitAnimation.css");
+
+
+
+header {
+    color: white;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 86px;
+    width: fit-content;
+    padding: 0px 45px;
+    border-radius: 16px;
+    margin: auto;
+
+    background-color: rgba(65, 64, 64, 0.4);  
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(12px);  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+   
+}
+
+header img {
+    width: 28px;
+}
+
+#header-content{
+    position: absolute;
+    z-index: 100;
+    top: 64px;
+    width: 100%;
+}
+
+header .links{
+    display: flex;
+    gap: 30px;
+
+}
+#heroDiv {
+    background: #000000;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    display: flex;          /* ajuda a centralizar o .orbit-stage na tela toda */
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#heroDiv span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);   /* centraliza verticalmente */
+    z-index: 2;                     /* texto fica por cima da imagem */
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#heroDiv span:first-of-type {
+    left: 260px;     
+}
+
+#heroDiv span:last-of-type {
+    right: 260px;    
+}
+
+#teste{
+   background: #121212;
+    height: 100vh; 
+}
+
+#principal-content{
+    position: relative;
+}
+
+

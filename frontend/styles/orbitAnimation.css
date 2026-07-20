@@ -1,0 +1,34 @@
+.orbit-stage {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+.character {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2000px;
+    object-fit: cover;
+    z-index: 5;   /* referência: ícones "na frente" ficam acima disso, "atrás" ficam abaixo */
+}
+
+
+.orbit-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.orbit-icon {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -25px 0 0 -25px;
+    will-change: transform, opacity;
+}
