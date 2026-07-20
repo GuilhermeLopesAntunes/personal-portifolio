@@ -68,9 +68,57 @@ header .links{
     right: 260px;    
 }
 
-#teste{
+#about{
    background: #121212;
-    height: 100vh; 
+   height: 100vh; 
+   padding: 0px 64px;
+
+   
+
+}
+
+#about h2{
+    padding-top: 24px;
+    font-size: 36px;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+
+}
+
+
+.cardAbout {
+    width: 260px;
+    background: radial-gradient(circle at top left, #000000, #161616);
+    padding: 48px 24px;
+    border-radius: 30px;
+}
+
+#title-card-1{
+    color: #4464A8;
+    font-size: 20px;
+}
+
+#about p{
+    font-weight: 300;
+    color: #9A9A9A;
+    font-size: 14px;
+    overflow-wrap: break-word;
+
+}
+#date-hour-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    gap: 8px;
+}
+
+#date{
+    font-size: 10px;
+}
+
+#hour{
+    font-size: 20px;
 }
 
 #principal-content{
@@ -78,3 +126,6 @@ header .links{
 }
 
 
+#principal-content-about {
+    display: flex;
+}

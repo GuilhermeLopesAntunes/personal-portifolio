@@ -5,8 +5,8 @@ const MIN_SCALE = 0.5;
 const MAX_SCALE = 1.1;
 const MIN_OPACITY = 0.35;
 const Y_OFFSET = 80;
-const RADIUS_Y_FRONT = 120;  // o quanto desce na frente (metade onde t < 0.5)
-const RADIUS_Y_BACK = 100;    // o quanto sobe atrás (metade onde t >= 0.5)
+const RADIUS_Y_FRONT = 120;  
+const RADIUS_Y_BACK = 100;  
 
 async function loadStacks() {
     const res = await fetch("http://127.0.0.1:8000/stacks");
