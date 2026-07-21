@@ -70,10 +70,10 @@ header .links{
 
 #about{
    background: #121212;
-   height: 100vh; 
-   padding: 0px 64px;
+   min-height: 100vh;
+   padding: 48px 64px;
 
-   
+
 
 }
 
@@ -88,12 +88,18 @@ header .links{
 
 
 .cardAbout {
-    width: 260px;
+
     background: radial-gradient(circle at top left, #000000, #161616);
     padding: 48px 24px;
     border-radius: 30px;
+    box-sizing: border-box;
+    flex: 1 1 260px;
 }
 
+.smallCard{
+    width: 100%;
+    max-width: 260px;
+}
 #title-card-1{
     color: #4464A8;
     font-size: 20px;
@@ -128,4 +134,43 @@ header .links{
 
 #principal-content-about {
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.cardAbout:nth-child(2) {
+    margin-top: 60px;
+}
+
+@media (max-width: 900px) {
+    #principal-content-about {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cardAbout:nth-child(2) {
+        margin-top: 0;
+        order: -1;
+    }
+
+    .smallCard {
+        max-width: 100%;
+    }
+}
+
+#meet-more{
+    display: flex;
+    flex-direction: column;
+}
+
+.principalButton {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    font-size: small;
 }
